@@ -18,9 +18,9 @@
 	<url>https://www.anaptecs.de/jeaf</url>
 
 	<scm>
-		<connection>scm:git:https://bitbucket.org/anaptecs/jeaf-workload-impl.git</connection>
-		<developerConnection>scm:git:https://bitbucket.org/anaptecs/jeaf-workload-impl.git</developerConnection>
-		<url>https://bitbucket.org/anaptecs/jeaf-workload-impl.git</url>
+		<connection>scm:git:https://github.com/anaptecs/jeaf-workload-impl.git</connection>
+		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-workload-impl.git</developerConnection>
+		<url>https://github.com/anaptecs/jeaf-workload-impl.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
