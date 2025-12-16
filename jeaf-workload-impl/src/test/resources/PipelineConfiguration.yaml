@@ -1,0 +1,39 @@
+#
+# For further information about the configuration parameters for pipelines please refer to Javadoc of annotation
+# com.anaptecs.jeaf.workload.annotations.PipelineConfig
+#
+pipelines:
+# Pipeline for long running requests
+-   id: Pipeline1
+    name: Pipeline 1
+    description: Pipeline for long running requests
+    
+    # Thread pool configuration of the pipeline.
+    coreThreads: 5
+    maxThreads: 10
+    maxThreadKeepAlive: 22222
+    threadPriority: 7
+    defaultPipeline: true
+    
+    # Queue configuration of the pipeline.
+    queueType: FIFO
+    maxQueueDepth: 37
+    maxLatency: 5000000
+    timeUnit: NANOSECONDS
+
+    # List with all generic request type keys that will be processed by this pipeline.
+    genericKeys:
+    -   key: LongRunningRequests
+
+    # List with all REST request type keys that will be processed by this pipeline.
+    restKeys:
+    -   endpointURL: api/v4/resource
+        httpMethod: POST
+
+# Pipeline for Fahrplan requests
+-   id: MinimalPipeline
+    coreThreads: 10
+    genericKeys: []
+    restKeys:
+    -   endpointURL: api/v3
+    

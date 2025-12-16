@@ -1,0 +1,2 @@
+com.anaptecs.jeaf.workload.test.FIFOPipeline
+com.anaptecs.jeaf.workload.test.NoQueuingPipeline
